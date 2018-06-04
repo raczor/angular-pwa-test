@@ -8,7 +8,7 @@ app.use(express.static(path.resolve('dist')));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(path.resolve('dist/index.html')));
+res.sendFile(path.join(path.resolve('dist/ng-pwa/index.html')));
 });
 
 // Start the app by listening on the default Heroku port
